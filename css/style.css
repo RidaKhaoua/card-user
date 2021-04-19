@@ -1,0 +1,232 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+:root {
+    --main-color : #2eca7f;
+    --secondary-color: #3b4952;
+}
+body {
+    /* background-color: #eee; */
+     font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    background-color: #eee;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Small Screen*/
+@media (min-width:768px) {
+    .container {
+        width: 750px;
+    }
+}
+/* Mediume Screen  */
+@media (min-width:992px) {
+    .container {
+        width: 970px;
+    }
+   
+   
+}
+/* Larger Screen */
+@media (min-width:1200px) {
+    .container {
+        width: 1170px;
+    }  
+}
+/* End Global rules*/
+
+/* Start header  */
+.container header {
+    background-color: var(--main-color);
+   display: flex;
+   flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 10px;
+}
+
+.container header .profile {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+@media (max-width:550px) {
+    .container .profile {
+        margin-left: auto;
+        margin-right: auto;
+      
+    }
+}
+
+.container  header .info {
+    margin-left: 14px;
+}
+
+.container header .info h1 {
+    color: white;
+    text-transform: capitalize;
+    line-height: 1.6;
+    font-weight: 600;
+}
+
+.container header .info p {
+    color: white;
+    line-height: 1.2;
+    text-transform: capitalize;
+}
+
+.container .profile .image img {
+    max-width:140px;
+}
+
+.container .icons  h3{
+    color: white;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
+
+.container .icons i {
+    background-color: white;
+    color: var(--main-color);
+    padding: 8px 8px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+@media (max-width:550px) {
+    .container .icons {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+/* End header */
+/* Start section */
+section {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+section nav {
+    padding: 20px 20px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent #ddd transparent transparent;
+    width: 180px;
+}
+
+section nav ul {
+    list-style-type: none;
+    padding: 0;
+    color: var(--secondary-color);
+}
+
+section nav ul li {
+    margin: 28px 0;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+section nav ul li i {
+    padding: 10px;
+}
+
+section nav ul li:first-child {
+    color: var(--main-color);
+    position: relative;
+}
+
+section nav ul li:first-child::before {
+    content: "";
+    position:absolute;
+    left: -20px;
+    top: 18px;
+    width: 22px;
+    height: 2px;
+    background-color: var(--main-color);
+}
+
+section .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 18px;
+}
+
+section .content img {
+    width: 480px;
+}
+
+section .body-content {
+    /* border: 1px solid black; */
+    width: 500px;
+    padding: 20px;
+    
+}
+
+section .body-content h2 {
+    text-transform: capitalize;
+    color: black;
+    font-weight: bold;
+    /* line-height: 1.8; */
+    position: relative;
+    border-bottom: 1px solid var(--main-color);
+    width: fit-content;
+    margin-bottom: 20px;
+}
+
+
+section .body-content h2::before {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50%;
+    height: 10px;
+    border-radius: 15px;
+    background-color: var(--main-color);
+}
+
+section .body-content p {
+    line-height: 1.8;
+    width: 480px;
+    margin-bottom: 20px;
+}
+
+section .body-content p span {
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+section .body-content .button {
+    background-color: var(--main-color);
+    width: fit-content;
+    padding: 10px 30px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+section .body-content .button a {
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+section .body-content .button i {
+    background-color: white;
+    color: var(--main-color);
+    padding: 8px 9px;
+    border-radius: 50%;
+    margin-right: 3px;
+}
+
+/* End section */
